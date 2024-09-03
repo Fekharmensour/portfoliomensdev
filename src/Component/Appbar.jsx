@@ -4,7 +4,7 @@ import { IoMdClose } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 const Appbar = () => {
   const [active, setActive] = useState("home");
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const handlechange = (x) => {
     setActive(x);
   };
