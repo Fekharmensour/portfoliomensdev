@@ -37,8 +37,8 @@ const About = () => {
                 
                 <div className="btns">
                   <a href="#contact"><button className="me-3">Hire me </button></a>
- 
-                    <button onClick={()=>Navigate('preview')} >Preview Cv</button>
+                  <button onClick={()=>window.open('/portfoliomensdev/#/preview', '_blank')} >Preview Cv</button> 
+                  {/* this one i wana dispaly it anouther window in prowser */}
                 </div>
             </div>
         </div>

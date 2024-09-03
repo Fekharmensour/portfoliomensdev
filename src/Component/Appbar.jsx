@@ -5,9 +5,14 @@ import { FiMenu } from "react-icons/fi";
 const Appbar = () => {
   const [active, setActive] = useState("home");
   const [open, setOpen] = useState(false);
+  const [close, setClose] = useState(false);
   const handlechange = (x) => {
     setActive(x);
   };
+  const handelopen = ()=>{
+    setOpen(!open);
+    setClose(true);
+  }
   return (
     <>
     <div className="appbar">
@@ -70,12 +75,12 @@ const Appbar = () => {
         </div>
         <div className="menu fs-4 icon" style={{ cursor: "pointer" }}>
             {
-                open ? <IoMdClose onClick={()=>setOpen(false)}/> :  <FiMenu onClick={()=>setOpen(true)}/>
+                open ? <IoMdClose onClick={()=>handelopen()}/> :  <FiMenu onClick={()=>handelopen()}/>
             }
          
         </div>
       </div>
-      <div className={open?"smAppbar d-flex justify-content-center align-items-center  ":"smAppbar d-flex justify-content-center align-items-center close "}>
+      <div className={open?"smAppbar d-flex justify-content-center align-items-center open ": close ? "smAppbar d-flex justify-content-center align-items-center close " :"smAppbar d-flex justify-content-center align-items-center  "}>
       <ul className="list d-flex flex-column justify-content-center align-item-center text-center">
             <li className="mb-3 " onClick={() => {handlechange("home") , setOpen(false)}} >
               {" "}

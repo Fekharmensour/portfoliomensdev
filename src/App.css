@@ -124,11 +124,17 @@ a{
     background-color: #16161dc2 ;
     border: 1px solid #333;
     border-top: none;
+    /* animation: Up_to_Down var(--slawly-transition) forwards ; */
+    transform: translateY(-150%);
+}
+.smAppbar.open{
     animation: Up_to_Down var(--slawly-transition) forwards ;
+    display: block;
 }
 .smAppbar.close{
     animation: Down_to_Up var(--slawly-transition) forwards !important;
 }
+
 
 @keyframes Up_to_Down {
     0%{
@@ -696,10 +702,7 @@ a{
     padding-top: 80px;
     padding-bottom: 80px;
 }
-.portfolio .container{
-    /* margin-top: 80px; */
-    /* margin-bottom: 80px; */
-}
+
 .portfolio .title{
     font-size: 30px;
     font-optical-sizing: auto;

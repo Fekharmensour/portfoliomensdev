@@ -6,7 +6,7 @@ import pdfUrl from './../assets/mycv.pdf';
 function PdfPreviewPage() {
   return (
     <div >
-      <iframe src={pdfUrl} width="100%" height="900px"></iframe>
+      <iframe src={pdfUrl} style={{width:"100vw",height:"100vh"}} ></iframe>
     </div>
   );
 }
