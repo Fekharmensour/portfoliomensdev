@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import main_img from './../assets/main_img.png';
 import { FaSquareFacebook , FaSquareXTwitter } from "react-icons/fa6";
 import { FaGithub , FaTelegram , FaInstagram } from "react-icons/fa";
-
+import { Link } from "react-scroll";
 const Landing = () => {
     const array = [
         " Web Devloper",
@@ -37,7 +37,7 @@ const Landing = () => {
                 feel free to reach out to me!
                 </div>
                 <div className="button">
-                    <a href="#contact"><button >Let's Talk </button></a>
+                    <Link to="contact"><button >Let's Talk </button></Link>
                 </div>
                 
             </div>
