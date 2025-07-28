@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Typewriter } from "react-simple-typewriter";
-import main_img from './../assets/main_img.png';
+import main_img from './../assets/mensourfk.png';
 import { FaSquareFacebook , FaSquareXTwitter } from "react-icons/fa6";
 import { FaGithub , FaTelegram , FaInstagram } from "react-icons/fa";
 import { Link } from "react-scroll";
@@ -33,7 +33,7 @@ const Landing = () => {
                 </div>
                 <div className="desc">
                 Experienced Software Engineer and Web Developer specializing in full-stack development
-                with React.js for the front end and Laravel for the back end. If you need a complete web solution,
+                with React.js for the front end and Laravel for the back end. If you need a complete web solution,<br/>
                 feel free to reach out to me!
                 </div>
                 <div className="button">
@@ -41,10 +41,12 @@ const Landing = () => {
                 </div>
                 
             </div>
-            <div class="right col-6   d-flex  justify-content-end align-items-center">
-                <img src={main_img} width={320} alt="" />
+            
+            <div class="col-sm-10 col-md-6 r8  d-flex  justify-content-end align-items-center">
+                <img src={main_img} width={500} alt="" />
             </div>
-            <div className="down"></div>
+            <div className="vide"></div>
+            <div className="down "></div>
         </div>
       </div>
     </div>

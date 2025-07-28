@@ -18,8 +18,8 @@ const skillsData = [
   { name: "JavaScript", width: "85%", image: js_img },
   { name: "React Js", width: "90%", image: react_img },
   { name: "Php", width: "88%", image: php_img },
-  { name: "Laravel", width: "79%", image: laravel_img },
-  { name: "Python", width: "65%", image: py_img },
+  { name: "Laravel", width: "88%", image: laravel_img },
+  { name: "Python", width: "85%", image: py_img },
   { name: "MySql", width: "85%", image: mysql_img },
 ];
 

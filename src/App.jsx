@@ -7,6 +7,7 @@ import './App.css'
 // import home from './home
 import Home from './home'
 import PdfPreviewPage from './Component/PdfPreviewPage';
+import ProjectDetails from './Component/ProjectDetails';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
          
         <Route path="/" element={<Home/>} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
         <Route path="/preview" element={<PdfPreviewPage/>} />
       </Routes>
     </HashRouter>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import pdfUrl from './../assets/mycv.pdf';
+import pdfUrl from './../assets/mensourFEKHAR.pdf';
 
 
 function PdfPreviewPage() {
