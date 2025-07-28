@@ -40,7 +40,7 @@ const About = () => {
 
             <div className="btns">
               <Link to="contact"><button className="me-3">Hire me </button></Link>
-              <button onClick={() => window.open('/portfoliomensdev/#/preview', '_blank')} >Preview Cv</button>
+              <button onClick={() => window.open('/#/preview', '_blank')} >Preview Cv</button>
               {/* this one i wana dispaly it anouther window in prowser */}
             </div>
           </div>
